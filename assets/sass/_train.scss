@@ -1,0 +1,15 @@
+.train {
+  padding-top: 78px;
+  &-container {
+    max-width: 375px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-title {
+    margin-bottom: 48px;
+  }
+  &-download {
+    width: 168px;
+    height: 50px;
+  }
+}

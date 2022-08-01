@@ -1,0 +1,266 @@
+@import url("http://fonts.cdnfonts.com/css/lab-grotesque");
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+  font-weight: 700;
+}
+
+.heading {
+  color: #333333;
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.text {
+  color: #333333;
+  font-size: 1.5rem;
+  line-height: 1.3333333333;
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+  line-height: 1;
+  font-family: "Lab Grotesque", sans-serif;
+  color: #333333;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1750px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  display: inline-block;
+  font-family: "Lab Grotesque", sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Lab Grotesque", sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn--download {
+  height: 48px;
+  width: 129px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #04ddb2;
+  border-radius: 1.5rem;
+  text-transform: capitalize;
+}
+
+.scale-tranform {
+  transition: 0.2s ease-in-out;
+}
+.scale-tranform:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.text-black {
+  color: #000 !important;
+}
+
+.header {
+  padding: 20px 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  height: 21px;
+  width: 79.14px;
+}
+.header-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+}
+.header-link {
+  margin: 0 20px;
+  font-size: 1.125rem;
+  color: #767676;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: 0.2s ease-in-out;
+}
+.header-link:hover {
+  transform: translateY(-1px) scale3d(1.03, 1.03, 1.03);
+  color: #333333;
+}
+
+.intro {
+  padding-top: 40px;
+}
+.intro-container {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro-title {
+  margin-bottom: 12px;
+}
+.intro-title--green {
+  color: #04ddb2;
+}
+.intro-content {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 2.175rem;
+}
+.intro-video {
+  padding-top: 40px;
+}
+.intro-video--container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+.intro-video--image {
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease;
+}
+.intro-video--image:hover {
+  box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.03);
+  transform: scale3d(1.01, 1.01, 1.01);
+}
+
+.train {
+  padding-top: 78px;
+}
+.train-container {
+  max-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+}
+.train-title {
+  margin-bottom: 48px;
+}
+.train-download {
+  width: 168px;
+  height: 50px;
+}
+
+.footer {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  max-width: 890px;
+  margin: 0 auto;
+  padding: 60px 80px;
+}
+.footer-logo {
+  width: 67.84px;
+  height: 18px;
+  margin-bottom: 31.2px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #04ddb2;
+  transition: 0.1s ease-in;
+  margin: 8px;
+}
+.footer-item--list {
+  display: flex;
+  flex-direction: column;
+  margin-top: -8px;
+}
+.footer-item ul {
+  list-style: none;
+}
+.footer-item ul li {
+  margin-bottom: 24px;
+}
+.footer-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #333333;
+  margin-bottom: 31.2px;
+  text-transform: capitalize;
+}
+.footer-link {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1rem;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=style.css.map */
