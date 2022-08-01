@@ -96,6 +96,7 @@ button {
 .btn--download {
   height: 48px;
   width: 129px;
+  display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
