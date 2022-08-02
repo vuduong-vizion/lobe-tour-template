@@ -346,19 +346,17 @@ button {
   .footer-mobile--right {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-  }
-}
-@media (min-width: 360px) {
-  .footer-mobile--right {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 @media (min-width: 414px) {
   .footer-mobile {
     padding: 60px 45px;
+  }
+}
+@media (min-width: 540px) {
+  .footer-mobile {
+    padding: 60px 110px;
   }
 }
 
