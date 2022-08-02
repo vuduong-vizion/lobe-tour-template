@@ -1,15 +1,28 @@
 .train {
-  padding-top: 78px;
+  display: block;
+  padding-top: 60px;
   &-container {
     max-width: 375px;
     margin: 0 auto;
     text-align: center;
   }
   &-title {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
+    font-weight: 900;
   }
   &-download {
-    width: 168px;
-    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    &--button {
+      width: 148px;
+      height: 42px;
+    }
+  }
+  @media (min-width: 360px) {
+    &-title {
+      max-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 32px;
+    }
   }
 }

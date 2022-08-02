@@ -1,0 +1,116 @@
+.footer {
+  display: block;
+  padding: 0 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 64px 64px;
+  &-mobile {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+    // &--container {
+    //   text-align: center;
+    //   padding: 61px 24px;
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+    display: flex;
+    max-width: 892px;
+    padding: 60px 30px;
+    flex-direction: column;
+    flex: 1 1;
+    justify-content: space-between;
+
+    &--right {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      max-width: 350px;
+      margin: auto;
+    }
+    &--column {
+      flex: 1 1;
+      text-align: center;
+      margin-bottom: 55px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 16px;
+    }
+
+    &--column-title {
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 1rem;
+      color: $text-color;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+
+    &--column-link {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1rem;
+      color: $text-color;
+      text-transform: capitalize;
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: $light-green;
+      transition: 0.1s ease-in;
+      margin: 8px;
+    }
+    &--social-link {
+      padding: 0 16px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1;
+      align-items: center;
+      justify-content: center;
+    }
+    &--left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &--logo {
+      width: 67.84px;
+      height: 18px;
+      margin-bottom: 29px;
+    }
+    &--copyright-line {
+      margin-bottom: 24px;
+      p {
+        font-weight: 300;
+      }
+    }
+
+    @media (min-width: 280px) {
+      &--right {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 360px) {
+      &--right {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+  }
+}

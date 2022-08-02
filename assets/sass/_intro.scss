@@ -1,24 +1,28 @@
 .intro {
-  padding-top: 40px;
+  display: block;
+  padding-top: 125px;
+
   &-container {
+    padding: 0 32px;
     max-width: 480px;
     margin: 0 auto;
     text-align: center;
   }
   &-title {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     &--green {
       color: $light-green;
     }
   }
   &-content {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.125rem;
+    font-weight: 300;
     color: $text-color;
-    line-height: 2.175rem;
+    line-height: 1.5rem;
+    margin-bottom: 40px;
   }
   &-video {
-    padding-top: 40px;
+    padding-top: 27px;
     &--container {
       max-width: 840px;
       margin: 0 auto;
@@ -35,4 +39,6 @@
       }
     }
   }
+
+ 
 }

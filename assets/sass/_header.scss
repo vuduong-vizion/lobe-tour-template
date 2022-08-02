@@ -1,22 +1,54 @@
 .header {
-  padding: 20px 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+
+  &-fixed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: $white;
+  }
   &-container {
+    // padding: 0 18.5px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 30px;
   }
   &-logo {
-    height: 21px;
-    width: 79.14px;
+    height: 23px;
+    width: 82.93px;
+    margin-left: 2px;
+    margin-bottom: 4px;
+  }
+  // &-logo {
+  //   height: 21px;
+  //   width: 79.14px;
+  // }
+
+  &-nav,
+  &-download {
+    display: none;
   }
 
-  &-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    flex-grow: 1;
-  }
+  // &-nav {
+  //   display: flex;
+  //   justify-content: center;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   flex-grow: 1;
+  // }
 
   &-link {
     margin: 0 20px;
