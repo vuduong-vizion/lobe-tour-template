@@ -277,6 +277,7 @@ button {
   display: flex;
   flex-direction: column;
   padding: 0 16px;
+  align-items: center;
 }
 .footer-mobile--column-title {
   font-size: 1rem;
@@ -338,6 +339,13 @@ button {
   .footer-mobile--right {
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+@media (min-width: 360px) {
+  .footer-mobile--right {
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
