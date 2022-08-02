@@ -120,5 +120,9 @@
         align-items: center;
       }
     }
+
+    @media (min-width: 414px) {
+      padding: 60px 45px;
+    }
   }
 }

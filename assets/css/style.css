@@ -356,6 +356,11 @@ button {
     align-items: center;
   }
 }
+@media (min-width: 414px) {
+  .footer-mobile {
+    padding: 60px 45px;
+  }
+}
 
 .footer {
   padding: 55px 16px 16px 16px;
