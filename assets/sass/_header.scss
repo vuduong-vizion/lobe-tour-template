@@ -26,9 +26,9 @@
     margin: 0 30px;
   }
   &-logo {
-    height: 23px;
+    height: 22px;
     width: 82.93px;
-    margin-left: 2px;
+    // margin-left: 0px;
     margin-bottom: 4px;
   }
   // &-logo {
@@ -67,7 +67,9 @@
       display: flex;
     }
     &-nav {
+      margin-top: 2px;
       margin-left: 40px;
+      gap: 2px 9px;
     }
   }
   @media (min-width: 1280px) {

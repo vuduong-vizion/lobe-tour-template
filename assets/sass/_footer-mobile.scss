@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   // padding: 62px 64px 64px;
+  padding: 0 15px;
   &-mobile {
     border-top: 0.5px solid rgba(0, 0, 0, 0.2);
     display: flex;
@@ -24,7 +25,7 @@
     &--column {
       flex: 1 1;
       text-align: center;
-      margin-bottom: 55px;
+      margin-bottom: 60px;
       display: flex;
       flex-direction: column;
       padding: 0 16px;
@@ -47,7 +48,7 @@
       color: $text-color;
       text-transform: capitalize;
       display: block;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     &--icon {

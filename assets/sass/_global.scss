@@ -5,6 +5,8 @@ body {
   color: $text-color;
   font-weight: 400;
   background-color: $white;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container {
