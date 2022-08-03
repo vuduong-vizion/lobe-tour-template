@@ -637,7 +637,7 @@ button {
 }
 @media (min-width: 1920px) {
   .footer-desktop {
-    max-width: 1220px;
+    max-width: 1400px;
     padding: 117px 80px;
   }
   .footer-desktop--left {
