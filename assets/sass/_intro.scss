@@ -40,7 +40,7 @@
     }
   }
 
-  @media (max-width: 414px) {
+  @media (min-width: 414px) {
     &-content {
       max-width: 330px;
     }
@@ -57,7 +57,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @include tablet {
     &-container {
       max-width: 650px;
     }
@@ -71,6 +71,40 @@
     }
     &-video {
       padding-top: 20px;
+    }
+  }
+
+  @media (min-width: 912px) {
+    &-container {
+      max-width: 800px;
+    }
+  }
+
+  @include desktop {
+    &-container {
+      max-width: 860px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    padding-top: 150px;
+    &-container {
+      max-width: 1150px;
+    }
+    &-title {
+      margin-bottom: 20px;
+    }
+    &-video {
+      padding-top: 40px;
+    }
+    &-video--container {
+      max-width: 1150px;
+    }
+    padding-top: 145px;
+    &-content {
+      font-size: 32px;
+      line-height: 2.5rem;
+      max-width: 625px;
     }
   }
 }

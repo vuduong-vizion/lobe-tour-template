@@ -19,7 +19,6 @@
     background-color: $white;
   }
   &-container {
-    // padding: 0 18.5px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -42,14 +41,6 @@
     display: none;
   }
 
-  // &-nav {
-  //   display: flex;
-  //   justify-content: center;
-  //   flex-direction: row;
-  //   align-items: center;
-  //   flex-grow: 1;
-  // }
-
   &-link {
     margin: 0 20px;
     font-size: 1.125rem;
@@ -61,6 +52,32 @@
     &:hover {
       transform: translateY(-1px) scale3d(1.03, 1.03, 1.03);
       color: $text-color;
+    }
+  }
+
+  @media (min-width: 800px) {
+    &-container {
+      margin: 0 20px;
+    }
+    &-menu--button {
+      display: none !important;
+    }
+    &-nav,
+    &-download {
+      display: flex;
+    }
+    &-nav {
+      margin-left: 40px;
+    }
+  }
+  @media (min-width: 1280px) {
+    &-container {
+      margin: 0 65px;
+    }
+  }
+  @media (min-width: 1920px) {
+    &-container {
+      margin: 0 20px;
     }
   }
 }

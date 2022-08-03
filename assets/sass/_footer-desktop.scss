@@ -1,62 +1,153 @@
 .footer {
-  padding: 55px 16px 16px 16px;
-  &-container {
-    max-width: 890px;
-    margin: 0 auto;
-    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
-  }
   &-desktop {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
     display: none;
-    &--logo {
-      width: 67.84px;
-      height: 18px;
-      margin-bottom: 31.2px;
-    }
-    &--list {
+    max-width: 892px;
+    padding: 60px 30px;
+    flex-direction: column;
+    flex: 1 1;
+    justify-content: space-between;
+
+    &--right {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      max-width: 350px;
+      margin: auto;
     }
-    &--item {
-      &--icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        background-color: $light-green;
-        transition: 0.1s ease-in;
-        margin: 8px;
-      }
-
-      &--list {
-        display: flex;
-        flex-direction: column;
-        margin-top: -8px;
-      }
-
-      ul {
-        list-style: none;
-        li {
-          margin-bottom: 24px;
-        }
-      }
+    &--column {
+      flex: 1 1;
+      text-align: center;
+      margin-bottom: 55px;
+      display: flex;
+      flex-direction: column;
+      padding: 0 16px;
+      align-items: center;
     }
-    &--title {
+
+    &--column-title {
       font-size: 1rem;
       font-weight: 700;
       line-height: 1rem;
       color: $text-color;
-      margin-bottom: 31.2px;
+      margin-bottom: 20px;
       text-transform: capitalize;
     }
-    &--link {
+
+    &--column-link {
       font-size: 1rem;
       font-weight: 300;
       line-height: 1rem;
       color: $text-color;
       text-transform: capitalize;
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    &--icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: $light-green;
+      transition: 0.1s ease-in;
+      margin: 8px;
+    }
+    &--social-link {
+      padding: 0 16px;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1;
+      align-items: center;
+      justify-content: center;
+    }
+    &--left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &--logo {
+      width: 67.84px;
+      height: 18px;
+      margin-bottom: 29px;
+    }
+    &--copyright-line {
+      margin-bottom: 24px;
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    &-desktop {
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      flex: 1 1;
+      align-items: flex-start;
+      justify-content: center;
+      &--left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+      }
+      &--column {
+        flex: 1 1;
+        text-align: left;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        align-items: flex-start;
+      }
+    }
+  }
+  @media (min-width: 912px) {
+    padding: 80px 60px;
+  }
+
+  @media (min-width: 1200px) {
+    &-desktop--column-icon {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding: 80px 32px 32px;
+  }
+  @media (min-width: 1920px) {
+    &-desktop {
+      max-width: 1220px;
+      padding: 117px 80px;
+    }
+    &-desktop--left {
+      flex: 1 1;
+    }
+    &-desktop {
+      &--copyright-line {
+        font-size: 1.25rem;
+      }
+    }
+    &-desktop--column {
+      margin-left: 10px;
     }
   }
 }

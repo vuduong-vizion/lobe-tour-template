@@ -28,3 +28,15 @@ h6 {
     font-size: 3.5rem;
   }
 }
+
+@media (min-width: 1280px) {
+  .heading {
+    font-size: 4rem !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .heading {
+    font-size: 5rem !important;
+  }
+}
