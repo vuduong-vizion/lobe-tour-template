@@ -22,3 +22,9 @@ h6 {
   line-height: calc(24 / 18);
   font-weight: 400;
 }
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+}

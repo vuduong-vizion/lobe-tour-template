@@ -40,5 +40,37 @@
     }
   }
 
- 
+  @media (max-width: 414px) {
+    &-content {
+      max-width: 330px;
+    }
+  }
+
+  @media (min-width: 540px) {
+    &-container {
+      padding: 0;
+    }
+    &-content {
+      max-width: 400px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &-container {
+      max-width: 650px;
+    }
+    &-title {
+      font-size: 3.5rem;
+    }
+    &-content {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      max-width: 500px;
+    }
+    &-video {
+      padding-top: 20px;
+    }
+  }
 }

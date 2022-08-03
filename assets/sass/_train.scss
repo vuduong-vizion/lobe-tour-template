@@ -25,4 +25,12 @@
       margin-bottom: 32px;
     }
   }
+  @media (min-width: 768px) {
+    padding-top: 80px;
+    &-title {
+      max-width: 450px;
+      margin: 0 auto;
+      margin-bottom: 32px;
+    }
+  }
 }

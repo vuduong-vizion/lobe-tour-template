@@ -63,6 +63,11 @@ h6 {
   font-weight: 400;
 }
 
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+}
 body {
   position: relative;
   line-height: 1;
@@ -215,6 +220,37 @@ button {
   box-shadow: 0 100px 140px -50px rgba(0, 0, 0, 0.25), 0 0 20px 0 rgba(0, 0, 0, 0.03);
   transform: scale3d(1.01, 1.01, 1.01);
 }
+@media (max-width: 414px) {
+  .intro-content {
+    max-width: 330px;
+  }
+}
+@media (min-width: 540px) {
+  .intro-container {
+    padding: 0;
+  }
+  .intro-content {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .intro-container {
+    max-width: 650px;
+  }
+  .intro-title {
+    font-size: 3.5rem;
+  }
+  .intro-content {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    max-width: 500px;
+  }
+  .intro-video {
+    padding-top: 20px;
+  }
+}
 
 .train {
   display: block;
@@ -240,6 +276,16 @@ button {
 @media (min-width: 360px) {
   .train-title {
     max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .train {
+    padding-top: 80px;
+  }
+  .train-title {
+    max-width: 450px;
     margin: 0 auto;
     margin-bottom: 32px;
   }
